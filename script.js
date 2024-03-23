@@ -39,15 +39,15 @@ window.onscroll = () => {
     /* ======================== scroll reveal ===========================*/
 ScrollReveal({
     reset: true,
-    distance: '80px',
+    distance: '100px',
     duration: 2000,
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-content, .heading, .about-container', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-container', { origin: 'right' }); 
+ScrollReveal().reveal('.home-content h1, .about-img, .home-content p, .about-container', { origin: 'left' });
+// ScrollReveal().reveal('.home-content p, .about-container', { origin: 'right' }); 
 
 
     /* ======================== tyoed js ===========================*/
@@ -58,6 +58,3 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
-
-// onclick function
-
